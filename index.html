@@ -17,6 +17,10 @@
       crossorigin="anonymous"
     />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -24,33 +28,18 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
-    <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
-
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>Clayton Blevins Personal Site</title>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
       <div class="container-fluid p-2 px-lg-2 py-lg-0">
         <!-- Set Name Here -->
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">Clayton Blevins</a>
         <button
           class="navbar-toggler bg-white"
           type="button"
@@ -69,13 +58,17 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#projects"
-                >Projects</a
+                >Past Work</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#courses"
                 >Courses</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#photos"
+              >Fun Photos ;)</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#contact"
@@ -95,6 +88,7 @@
       >
       <!-- Set Photo Here -->
         <img
+          src="images/headshot.jpeg"
           style="height: 150px; width: 150px"
           class="rounded-circle"
           draggable="false"
@@ -105,7 +99,7 @@
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          <span id="name">Clayton Blevins</span>!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -124,21 +118,12 @@
         </div>
         <div class="col text-center">
           <img
-            src="images/angular.jpg"
+            src="images/react.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="Angular"
+            title="React"
           />
         </div>
-        <div class="col text-center">
-          <img
-            src="images/typescript.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="TypeScript"
-          />
-        </div>
-
         <div class="col text-center">
           <img
             src="images/csharp.jpg"
@@ -204,53 +189,45 @@
       id="projects"
     >
       <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">Projects</h4>
+        <h4 class="h1 font-weight-bold mx-auto text-center">Past Work</h4>
       </div>
       <div class="row mx-auto">
         <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
-          I've worked on some neat things.
+          I've worked with some neat companies
         </h5>
       </div>
       <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+        <h5>The Cigna Group</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
+          TECDP Intern, TECDP
+          <ul>
+            <li>Worked on Vulnerability Engineering team to manage several secure baselines</li>
+            <li>access for dozens of users for Tenable services</li>
+            <li>Developed a script to make the process of reviewing secure baselines more efficient</li>
+          </ul>
         </p>
       </div>
       <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
+        <h5>The KIPP Foundation</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
+          Tech Intern, Technology Department
+          <ul>
+            <li>Upgraded software and repaired 100+ devices for students and staff</li>
+            <li>Maintained and upgraded classroom equipment for three schools following strict deadlines</li>
+            <li>Gained experience with LDAP while setting up sixteen copiers</li>
+          </ul>
         </p>
       </div>
       <div class="row w-100">
-        <h5>Query Dating Site</h5>
+        <h5>What's Cookin'</h5>
       </div>
       <div class="row w-100">
         <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-          efficitur at.
+          An app that functions as a recipe finder tool. It would be structured in the style of a dating app where cards show up of certain recipes and the user swipes on recipes they are interested in, and the app learns what the user likes through this and tries to show recipes that the user is more likely to enjoy. There could also potentially be a feature to export these recipes to a grocery list format. On top of these features, there would also be a social media aspect. This feature would allow for users to share what recipes they have cooked as well as posting their own. This would likely function like a way Venmo does.
         </p>
       </div>
       <div class="row mt-3 next">
@@ -324,7 +301,7 @@
           <h5 class="m-0">Database Management Systems</h5>
         </a>
         <div class="row mt-5 next justify-content-center align-items-center">
-          <a href="#contact" class="text-center"
+          <a href="#photos" class="text-center"
             ><iconify-icon
               icon="material-symbols:arrow-circle-down"
               class="arrow-next"
@@ -333,6 +310,47 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+      id="photos"
+    >
+      <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center pt-5" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+        <h4 class="h1 font-weight-bold mx-auto text-center">
+            Here are some fun photos ;)
+        </h4>
+
+        <img
+          src="images/otto2.jpeg"
+          style="width: 50%; text-align: center; border: .5rem solid #88182d;"
+          draggable="false"
+        />
+        <img
+            src="images/mav1.jpeg"
+            style="width: 50%; text-align: center; border: .5rem solid #88182d;"
+            draggable="false"
+        />
+        <img
+            src="images/superseven.jpeg"
+            style="width: 50%; text-align: center; border: .5rem solid #88182d;"
+            draggable="false"
+        />
+        <img
+            src="images/seven1.jpeg"
+            style="width: 50%; text-align: center; border: .5rem solid #88182d;"
+            draggable="false"
+        />
+      </div>
+      <div class="row mt-5 next justify-content-center align-items-center">
+        <a href="#contact" class="text-center"
+          ><iconify-icon
+            icon="material-symbols:arrow-circle-down"
+            class="arrow-next"
+          ></iconify-icon
+        ></a>
+      </div>
+    </div>
+
     <div
       class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
       id="contact"
